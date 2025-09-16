@@ -18,6 +18,35 @@ La aplicación permite:
 
 [video](https://github.com/user-attachments/assets/56775e7b-e2a5-4d94-ac91-100dcd3c80a7)
 
+
+## ⚙️ Prerrequisitos
+
+- **Java 17 o superior**  
+- **Maven 3.8.1 o superior** (probado en 3.9.9)  
+- **Docker** (para contenedores)
+- Navegador web
+
+---
+
+## 🏗 Arquitectura
+
+El proyecto sigue una arquitectura cliente–servidor:
+
+- **Backend (Java)**  
+  Servidor HTTP ligero basado en `MicroSpringBoot` que expone endpoints REST:
+  - `GET /tasks` – Lista las tareas.
+  - `POST /tasks` – Crea una nueva tarea.
+  
+- **Frontend (HTML, CSS, JavaScript)**  
+  Interfaz web que permite:
+  - Visualizar las tareas.
+  - Agregar nuevas.
+
+- **Contenedores Docker**  
+  Imagen Docker para ejecutar la aplicación en cualquier entorno, incluyendo AWS.
+
+---
+
 ## ⚙️ Instalación
 
 1. Clona este repositorio o descarga los archivos:  
