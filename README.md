@@ -153,6 +153,47 @@ y hacemos los siguientes comandos para subir la imagen al repositorio:
 
 ![login](/imagenes/login.png)
 
+### Crear una instancia EC2:
+
+nos conectamos via SSH a nuestra maquina:
+
+![EC2](/imagenes/EC2.png)
+
+luego instalamos Docker en la instancia:
+
+```bash
+   sudo yum update -y
+   sudo yum install docker
+   sudo service docker start
+   ```
+
+luego trasnferimos la imagen desde nuestro repositorio:
+
+```bash
+   docker run -d -p 42000:8080 -e DOCKER_ENV=true --name dockercontaineraws juanescan/taller4task
+   ```
+
+## ⚡ Main Features – HttpServer
+
+Este `HttpServer` es un servidor HTTP ligero en **Java** para el *Gestor de Tareas*.  
+Proporciona rutas REST, manejo de archivos estáticos, concurrencia y apagado elegante.
+
+### 🛣️ Definición de Rutas REST
+- Permite crear endpoints **GET** y **POST** con expresiones *lambda*.
+- Ejemplo:
+  ```java
+  get("/hello", (req, res) -> "Hello " + req.getValues("name"));
+  post("/api/tasks", (req, res) -> {
+      Task t = new Task("Estudiar", "personal");
+      addTask(t);
+      return "{\"message\":\"Task added successfully\"}";
+  });
+
+### 🔍 Extracción de Parámetros de Consulta
+
+- Extrae parámetros de la URL para utilizarlos en el endpoint.
+
+
 ## Test
 
 ![Test](/imagenes/testT3.png)
