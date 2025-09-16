@@ -16,7 +16,6 @@ public class HttpServer {
     private static final Map<String, BiFunction<Request, Response, String>> postRoutes = new ConcurrentHashMap<>();
     private static String staticDirectory = "src/main/webapp";
 
-    // Fields for concurrency and shutdown
     private static volatile boolean running = false;
     private static ServerSocket serverSocket = null;
     private static ExecutorService threadPool = null;
