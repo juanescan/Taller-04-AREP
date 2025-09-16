@@ -16,7 +16,7 @@ La aplicación permite:
 
 ## 🚀 Video de Despliegue
 
-[video]()
+[video](https://github.com/user-attachments/assets/56775e7b-e2a5-4d94-ac91-100dcd3c80a7)
 
 ## ⚙️ Instalación
 
