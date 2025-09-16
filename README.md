@@ -189,9 +189,14 @@ Proporciona rutas REST, manejo de archivos estáticos, concurrencia y apagado el
       return "{\"message\":\"Task added successfully\"}";
   });
 
-### 🔍 Extracción de Parámetros de Consulta
+### ⚙️ Concurrencia
 
-- Extrae parámetros de la URL para utilizarlos en el endpoint.
+Atiende múltiples solicitudes en paralelo usando un ExecutorService.
+
+```java
+private static final int THREADS = 10;
+private static ExecutorService threadPool = Executors.newFixedThreadPool(THREADS);
+
 
 
 ## Test
