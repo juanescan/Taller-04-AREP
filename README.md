@@ -196,7 +196,7 @@ Atiende múltiples solicitudes en paralelo usando un ExecutorService.
 ```java
 private static final int THREADS = 10;
 private static ExecutorService threadPool = Executors.newFixedThreadPool(THREADS);
-'''
+```
 
 
 ## Test
