@@ -45,6 +45,7 @@ El proyecto sigue una arquitectura cliente–servidor:
 - **Contenedores Docker**  
   Imagen Docker para ejecutar la aplicación en cualquier entorno, incluyendo AWS.
 
+![arquitectura](/imagenes/Arquitectura.png)
 ---
 
 ## ⚙️ Instalación
