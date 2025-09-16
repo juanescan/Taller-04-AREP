@@ -52,8 +52,8 @@ El proyecto sigue una arquitectura cliente–servidor:
 
 1. Clona este repositorio o descarga los archivos:  
    ```bash
-   git clone https://github.com/juanescan/Taller-03-AREP-II.git
-   cd Taller-03-AREP-II
+   git clone https://github.com/juanescan/Taller-04-AREP.git
+   cd Taller-04-AREP
 
 2. Compila el proyecto con Maven:
     ```bash
@@ -68,26 +68,6 @@ El proyecto sigue una arquitectura cliente–servidor:
 El servidor se ejecutará en el puerto 8080:
 
 👉 http://localhost:8080
-
-
-## 🏗️ Arquitectura
-
-El sistema está compuesto por tres capas principales:
-
-1. MicroSpringBoot (Framework casero)
-    - Levanta un servidor HTTP sobre ServerSocket.
-    - Soporta anotaciones para definir controladores REST (@RestController, @GetMapping, @PostMapping, @RequestBody).
-    - Expone servicios configurados en clases como TaskController.
-
-2. Servidor HTTP
-    - Sirve archivos estáticos desde la carpeta src/main/webapp.
-    - Procesa solicitudes GET y POST registradas en los controladores.
-    - Serializa objetos Task a formato JSON.
-
-3. Aplicación Web (Frontend)
-    - index.html: interfaz gráfica para gestionar tareas.
-    - script.js: comunicación con el servidor usando fetch().
-    - La lista de tareas se actualiza dinámicamente sin recargar la página.
 
 ## API REST
 
@@ -136,6 +116,16 @@ pom.xml
 README.md
 
 ```
+
+## Docker 🐳
+
+### Generación de Imágenes Docker:
+
+Para contruir la imagen del servidor con docker hacemos el siguiente comando:
+
+```bash
+   docker build --tag dockertask .
+   ```
 
 ## Test
 
