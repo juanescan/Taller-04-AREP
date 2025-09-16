@@ -16,7 +16,7 @@ La aplicación permite:
 
 ## 🚀 Video de Despliegue
 
-[video](imagenes/tutorial.mkv)
+[video](imagenes/tutorial.mp4)
 
 ## ⚙️ Instalación
 
