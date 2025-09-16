@@ -127,6 +127,8 @@ Para contruir la imagen del servidor con docker hacemos el siguiente comando:
    docker build --tag dockertask .
    ```
 
+![docker](/imagenes/dockerimagen.png)
+
 ## Test
 
 ![Test](/imagenes/testT3.png)
