@@ -1,6 +1,6 @@
-# Taller-03-AREP-II
+# Taller-04-AREP
 
-## Gestor de Tareas con MicroSpringBoot en Java
+## Modularización con Virtualización e Introducción a Docker
 
 Este proyecto implementa un **micro framework estilo Spring Boot** en Java puro que permite definir controladores REST usando anotaciones personalizadas (`@RestController`, `@GetMapping`, `@PostMapping`, etc.).  
 Sobre esta base, se desarrolla una aplicación web de gestión de tareas con frontend en HTML/JS y backend en Java.
@@ -9,7 +9,14 @@ La aplicación permite:
 
 - Agregar tareas con nombre y tipo (casa, universidad, trabajo, otro).  
 - Listar las tareas en la interfaz web de forma dinámica.  
-- Persistencia en memoria (las tareas se almacenan en una lista durante la ejecución del servidor).  
+- Persistencia en memoria (las tareas se almacenan en una lista durante la ejecución del servidor).
+- Desplegarse fácilmente en **contenedores Docker** y en **AWS EC2**.  
+
+---
+
+## 🚀 Video de Despliegue
+
+[video](imagenes/tutorial.mkv)
 
 ## ⚙️ Instalación
 
