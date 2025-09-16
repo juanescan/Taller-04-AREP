@@ -141,6 +141,18 @@ Creamos 3 contenedores
 
 ![contenedores](/imagenes/Contenedores.png)
 
+### APP FUNCIONANDO
+
+![funcionando](/imagenes/funcionando.png)
+
+Despues de confirmar que la app esta corriendo en local host vamos a crear un repositorio dentro de dockerhub
+
+![hub](/imagenes/hub.png)
+
+y hacemos los siguientes comandos para subir la imagen al repositorio:
+
+![login](/imagenes/login.png)
+
 ## Test
 
 ![Test](/imagenes/testT3.png)
