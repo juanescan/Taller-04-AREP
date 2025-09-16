@@ -129,6 +129,18 @@ Para contruir la imagen del servidor con docker hacemos el siguiente comando:
 
 ![docker](/imagenes/dockerimagen.png)
 
+### Ejecución de los Contenedores:
+
+Para crear los contenedores y correrlos localmente hacemos el siguiente comando:
+
+```bash
+   docker run -d -p 34000:8080 -e DOCKER_ENV=true --name dockercontainer dockertask
+   ```
+
+Creamos 3 contenedores
+
+![contenedores](/imagenes/Contenedores.png)
+
 ## Test
 
 ![Test](/imagenes/testT3.png)
